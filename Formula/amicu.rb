@@ -1,25 +1,25 @@
 class Amicu < Formula
   desc "Manage open LLMs and deploy them as code: locally or on cloud GPUs."
   homepage "https://amicu.dev"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.0/amicu-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "5d3b80098c36c0acc20dc2d304bc2e7a9edf98916d3a1938ef7cfacf5ad68b4e"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "3859977edea20fba54289d5da0079e18acc59c2db9bdd6fb493d24575d54ff1c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.0/amicu-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "40ae4b7ad17ee3a3211414bcea88d855971fbcc3c7434f619279f463064c3c0c"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "b81798742e8ac0e60527789b653c775e269bf33611443d8f303b6f8a99538fa9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.0/amicu-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "3abf1651e79d1278cdfbf7b55da8c760e3d140b0bdc4c91e1141d64bb5074ae7"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "2ba982e5ac89255f8f366acc2bb735c63cc90d60046fab53f32918815985ae58"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.0/amicu-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "103ff4fb4ad210f4ac289ca6a9884bcfbd2a9965497ce9f3f8083e4593924c60"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "9b012c13c8005c16c2eeecf5d1b701ee50f9c6e165502f6e62f83fdb21befbc5"
     end
   end
   license "AGPL-3.0-only"
