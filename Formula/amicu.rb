@@ -1,25 +1,25 @@
 class Amicu < Formula
   desc "Manage open LLMs and deploy them as code: locally or on cloud GPUs."
   homepage "https://amicu.dev"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3859977edea20fba54289d5da0079e18acc59c2db9bdd6fb493d24575d54ff1c"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.2/amicu-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "faf99255f73a895c7ea53f6e5631f6bea3d027d9e3e74ea3ba39e4ff50ec0f96"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "b81798742e8ac0e60527789b653c775e269bf33611443d8f303b6f8a99538fa9"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.2/amicu-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "29dedaaf0b5e282ec82187804a659b0c4a4aadd4c5584030986fce8ce66f7248"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "2ba982e5ac89255f8f366acc2bb735c63cc90d60046fab53f32918815985ae58"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.2/amicu-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "fcdcbabc80df776851c16b74b7b74055765dc2342153deea5abdb877f27273fa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andypalmi/amicu/releases/download/v0.1.1/amicu-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "9b012c13c8005c16c2eeecf5d1b701ee50f9c6e165502f6e62f83fdb21befbc5"
+      url "https://github.com/andypalmi/amicu/releases/download/v0.1.2/amicu-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "7c877af09140b59ec93899c37ee7612f485816df6b43c48b8968f6dc30a4f3f9"
     end
   end
   license "AGPL-3.0-only"
@@ -30,6 +30,7 @@ class Amicu < Formula
     "aarch64-unknown-linux-musl-dynamic": {},
     "aarch64-unknown-linux-musl-static":  {},
     "x86_64-apple-darwin":                {},
+    "x86_64-pc-windows-gnu":              {},
     "x86_64-unknown-linux-gnu":           {},
     "x86_64-unknown-linux-musl-dynamic":  {},
     "x86_64-unknown-linux-musl-static":   {},
